@@ -1,33 +1,33 @@
 print("")
-# # Multi-line print
-# print('''\nI'm in seclusion and I'm building myself. 
-# But when I breakthrough I will conquer this world.\n''' )
+# Multi-line print
+print('''\nI'm in seclusion and I'm building myself. 
+But when I breakthrough I will conquer this world.\n''' )
 
-# # Python text to speech
-# import pyttsx3
-# engine = pyttsx3.init()
-# print("Meow ghop ghop ghop\n")
-# # engine.say ("I'm in seclusion and I'm building myself. But when I breakthrough I will conquer this world.")
-# engine.runAndWait()
+# Python text to speech
+import pyttsx3
+engine = pyttsx3.init()
+print("Meow ghop ghop ghop\n")
+engine.say ("I'm in seclusion and I'm building myself. But when I breakthrough I will conquer this world.")
+engine.runAndWait()
 
-# # Type function and typecasting
-# a = 1.5
-# print(type(a))
+# Type function and typecasting
+a = 1.5
+print(type(a))
 
-# a = "5.8"
-# b = float(a)
-# t = type(b)
-# print(t)
+a = "5.8"
+b = float(a)
+t = type(b)
+print(t)
 
-# # input function and sum of 2 nos 
-# c = input("Give input : ")
-# print(type(c))
+# input function and sum of 2 nos 
+c = input("Give input : ")
+print(type(c))
 
-# d = int(input("Enter no.1 :"))
-# e = int(input("Enter no.2 :"))
-# print(type(d))
+d = int(input("Enter no.1 :"))
+e = int(input("Enter no.2 :"))
+print(type(d))
 
-# print("Sum of d and e is :", d + e)
+print("Sum of d and e is :", d + e)
 
 # strings 
 
