@@ -3,30 +3,56 @@
 print()
 
 # Title name
-print("=== Even/Odd Checker ===")
+print("="*20 + 'Even/Odd Checker' + "="*20)
 
 # Even/odd logic
-def is_even(number):
-    if number % 2 == 0 :
-        return True
-    return False
+def is_even(number) :
+    return number % 2 == 0 
+       
 
 # list of numbers
-numbers = [1, 3, 4, 34, 345, 64, 765, 23, 5343, 224]
+count = int(input("How many numbers to check?: "))
+num_list = []
+even = []
+odd = []
 
 # looping on list 
-if len(numbers) :
+i = 1
+if count == 0 :
+    print("No number given.")
+    
+while i <= count :
+
+    print()
+    ip = int(input(f"Enter number {i}: "))
+    num_list.append(ip)
+
+    # if count :
     
     # function call
-    for number in numbers :
-        if is_even(number) == True :
-            print(f"{number} is even.")
-        else: 
-            print(f"{number} is odd.")
+    if is_even(ip) :
+                print(f"{ip} is even.")
+                even.append(ip)
+    else: 
+                print(f"{ip} is odd.")
+                odd.append(ip)
+    i += 1
+    
+print(f"\nTotal: {count} numbers")
+if len(even) :
+    print(f"Even numbers: {even}")
+    print(f"Biggest even number: {max(even)}")
+    print(f"Smallest even number: {min(even)}")
+    print(f"Even: {len(even)}")
 
+if len(odd) :
+    print(f"\nOdd numbers: {odd}")
+    print(f"Biggest odd number: {max(odd)}")
+    print(f"Smallest odd number: {min(odd)}")
+    print(f"Odd: {len(odd)}")
 
 
 # Ending        
-print('='*24)
+print('='*60)
 
 print()
