@@ -18,7 +18,7 @@ while True :
     elif ip == 1 :
         print("\nADD CONTACT: ")
         name = input("Enter name: ")
-        phone = int(input("Enter phone number: "))
+        phone = input("Enter phone number: ")
 
         contact_book[name] = phone
         print(f"Contact added, {name}.\n")
@@ -28,15 +28,17 @@ while True :
         name1 = input("Enter name: ")
 
         if name1 in contact_book :
-            print(contact_book[name])
-        print("Contact not found.\n")
+            print(contact_book[name1])
+        else :
+            print("Contact not found.\n")
 
     elif ip == 3 : 
         print("\nSHOW ALL: ")
         if len(contact_book) :
             for key, value in contact_book.items() :
                 print(f"{key}: {value}")
-        print("No contacts yet.\n")
+        else :
+            print("No contacts yet.\n")
 
     else :
         print("Goodbye!")
