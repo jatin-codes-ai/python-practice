@@ -14,16 +14,18 @@ total = len(questions)
 score = 0
 
 for key, value in questions.items() :
-    print(questions[key])
-    ip = input("Enter your answer: ").lower
-    if ip == questions[value] :
+    print(key)
+    ip = input("Enter your answer: ").lower()
+    if ip == value :
         score += 1
         print("Correct!")
     else :
-        print(f"Wrong. The answer was {questions[value]}]")
+        print(f"Wrong. The answer was {value}.")
 
 print(f"Your score: {score}/{total}.")
 
 percentage = (score/total)*100
 
 print(f"Percentage: {percentage}%")
+
+print()
