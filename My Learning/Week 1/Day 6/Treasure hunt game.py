@@ -25,6 +25,6 @@ for attempt in range(1,6):
             else: 
                 print("Cold.")
 
-print(f"\nGame Over! Total score: {len(found)}/5. ")
+print(f"\nGame Over!\n Total score: {len(found)}/5. ")
 
 print()
