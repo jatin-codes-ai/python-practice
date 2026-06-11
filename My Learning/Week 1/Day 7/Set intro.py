@@ -13,7 +13,7 @@ print(f"After removing Javascript: {languages}")
 
 print(f"Is Python in set? {'Python' in languages}")
 
-
+# visitors list
 visitors = ["jatin", "ravi", "jatin", "amit", "ravi", "jatin"]
 unique_visitors = set(visitors)
 
