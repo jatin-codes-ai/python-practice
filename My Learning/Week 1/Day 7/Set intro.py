@@ -21,7 +21,7 @@ print(f"\nTotal visits: {len(visitors)}")
 print(f"Unique visitors: {len(unique_visitors)}")
 print(f"Unique names: {unique_visitors}")
 
-
+# skillset
 my_skills = {"Python", "Capcut", "Calisthenics"}
 needed_for_job = {"Python", "SQL", "ML", "Pandas"}
 already_have = my_skills.intersection(needed_for_job)
