@@ -1,7 +1,7 @@
 # Set intro 
 
 print()
-
+# languages
 languages  = {"Python", "Python", "SQL", "Javascript", "Python"}
 print(f"My languages: {languages}")
 
