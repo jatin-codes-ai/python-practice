@@ -27,6 +27,6 @@ needed_for_job = {"Python", "SQL", "ML", "Pandas"}
 already_have = my_skills.intersection(needed_for_job)
 print(f"\nSkills I already have: {already_have}")
 need_to_learn = needed_for_job - my_skills
-print(f"Skills I still need: {need_to_learn}")
+print(f"Skills I still need to learn: {need_to_learn}")
 
 print()
