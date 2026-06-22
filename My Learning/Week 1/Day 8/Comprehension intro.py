@@ -23,4 +23,33 @@ print(f"Length: {length}")
 long_title = [name.title() for name in manhwa if len(name) > 6]
 print(f"Long titles: {long_title}")
 
+# 6. Math on existing list
+prices = [100, 200, 300, 400]
+with_tax = [round(p * 1.18, 2) for p in prices]
+print(f"With tax: {with_tax}")
+
+print("\n=== DICT COMPREHENSIONS ===\n")
+
+skills = ['Python', 'sets', 'tuples', 'functions']
+skill_dict = {skill: 'C+' for skill in skills}
+print(f"Skills: {skill_dict}")
+
+# 9. From two lists using zip
+names = ["Jatin", "Ravi", "Amit"]
+ages = [23, 24, 22]
+people = {name: age for name, age in zip(names, ages)}
+print(f"People: {people}")
+
+print("\n=== SET COMPREHENSIONS ===\n")
+
+# 10. Unique vowels in a string
+sentence = "the sealed awakener rises"
+vowels = {char for char in sentence if char in "aeiou"}
+print(f"Vowels found: {vowels}")
+
+# 11. Unique word lengths
+words = ["python", "code", "data", "ml", "ai"]
+unique_lengths = {len(w) for w in words}
+print(f"Unique word lengths: {unique_lengths}")
+
 print()
