@@ -21,6 +21,6 @@ print(f"Length: {length}")
 
 # 5. Filter + transform
 long_title = [name.title() for name in manhwa if len(name) > 6]
-print(f"long titles: {long_title}")
+print(f"Long titles: {long_title}")
 
 print()
