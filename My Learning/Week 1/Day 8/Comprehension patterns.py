@@ -12,12 +12,21 @@ print(f"Results: {averages}")
 
 # 2. Tuple unpacking in comprehension
 data = [('a', 1), ('b', 2), ('c', 3)]
-# result = []
-# for item in data : # old way 
-#     letter, number = item
-#     result.append(letter * number)
+result = []
+for item in data : # old way 
+    letter, number = item
+    result.append(letter * number)
 
 result = [letter * number for letter, number in data ] # comprehension way
 print(f"Results: {result}")
+
+# 3. Nested list comprehension
+matrix = [[1, 2, 3],
+          [4, 5, 6],
+          [7, 8, 9]]
+flat = [num for row in matrix for num in row]
+print(f"Flat: {flat}")
+
+
 
 print()
