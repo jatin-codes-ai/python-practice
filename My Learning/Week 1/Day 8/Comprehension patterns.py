@@ -27,6 +27,15 @@ matrix = [[1, 2, 3],
 flat = [num for row in matrix for num in row]
 print(f"Flat: {flat}")
 
+# 4. If-else comprehension
+numbers = [1, 2, 3, 4, 5]
 
+even = [x for x in numbers if x%2 == 0]
+
+print(f"Even: {even}")
+
+label = ["even" if x%2 == 0 else "odd" for x in numbers]
+
+print(f"Labels: {label}")
 
 print()
