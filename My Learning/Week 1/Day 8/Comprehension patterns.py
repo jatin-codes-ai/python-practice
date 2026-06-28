@@ -34,7 +34,7 @@ even = [x for x in numbers if x%2 == 0]
 
 print(f"Even: {even}")
 
-label = ["even" if x%2 == 0 else "odd" for x in numbers]
+label = ["even" if x % 2 == 0 else "odd" for x in numbers]
 
 print(f"Labels: {label}")
 
