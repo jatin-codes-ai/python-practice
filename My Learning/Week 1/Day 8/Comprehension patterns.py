@@ -30,7 +30,7 @@ print(f"Flat: {flat}")
 # 4. If-else comprehension
 numbers = [1, 2, 3, 4, 5]
 
-even = [x for x in numbers if x%2 == 0]
+even = [x for x in numbers if x % 2 == 0]
 
 print(f"Even: {even}")
 
