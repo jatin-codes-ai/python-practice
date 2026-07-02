@@ -31,7 +31,7 @@ def get_grade(avg):
 grades = {name: get_grade(avg) for name, avg in averages.items()}
 print("\nGrades:")
 for name, grade in grades.items():
-    print(f"{name}: {grade}")
+    print(f"{name}: {grade} Grade")
 # 5
 all_marks = [marks for name,row in record for marks in row]
 print(f"All marks: {all_marks}")
