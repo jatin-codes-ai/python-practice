@@ -21,7 +21,7 @@ long_word = [word for word in words if len(word) > 4]
 print(f"Long words(>4): {long_word}")
 
 banned = 'Darkness.'
-censored = " ".join(["*********" if w == banned else w for w in words])
+censored = " ".join(["*******" if w == banned else w for w in words])
 print(f"\nCensored: {censored}")
 reverse = " ".join([word[::-1] for word in words])
 print(f"Reversed: {reverse}")
