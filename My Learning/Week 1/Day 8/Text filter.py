@@ -8,19 +8,25 @@ print(f"Clean: {raw.lower()}")
 print(f"Title: {raw.title()}")
 
 vowels = [v for v in raw.lower() if v in 'aeiou']
-print(f"Vowels: {vowels}")
+print(f"\nVowels: {vowels}")
 print(f"Vowels count: {len(vowels)}")
 constants = [c for c in raw.lower() if c not in 'aeiou. ']
-print(f"Constants: {constants}")
-print(f"Constant count: {len(constants)}")
+print(f"Consonants: {constants}")
+print(f"Consonant count: {len(constants)}")
 
 words = raw.title().split()
 words_length = {word: len(word) for word in words}
-print(f"Word Length: {words_length}")
+print(f"\nWord Length: {words_length}")
 long_word = [word for word in words if len(word) > 4]
 print(f"Long words(>4): {long_word}")
 
-reverse = [word.__reversed__() for word in words]
+banned = 'Darkness.'
+censored = " ".join(["*********" if w == banned else w for w in words])
+print(f"\nCensored: {censored}")
+reverse = " ".join([word[::-1] for word in words])
 print(f"Reversed: {reverse}")
+
+unique_count = len({word for word in words})
+print(f"\nUnique count: {unique_count}")
 
 print()
