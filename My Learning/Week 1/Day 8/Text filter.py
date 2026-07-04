@@ -27,6 +27,6 @@ reverse = " ".join([word[::-1] for word in words])
 print(f"Reversed: {reverse}")
 
 unique_count = len({word for word in words})
-print(f"\nUnique count: {unique_count}")
+print(f"\nUnique: {unique_count}")
 
 print()
