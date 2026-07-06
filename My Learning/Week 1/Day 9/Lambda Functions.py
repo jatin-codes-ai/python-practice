@@ -7,12 +7,12 @@ print("=" * 50)
 # 1. Basic lambda
 square = lambda x: x * x
 cube = lambda x: x ** 3
-double = lambda x: x * 2
+triple = lambda x: x * 3
 
 print("\n--- MATH LAMBDAS ---")
 print(f"Square of 7: {square(7)}")
 print(f"Cube of 4: {cube(4)}")
-print(f"Double of 15: {double(15)}")
+print(f"Double of 15: {triple(15)}")
 
 # 2. Multi-argument lambda
 add = lambda x, y: x + y
