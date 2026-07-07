@@ -43,7 +43,7 @@ category = lambda age: "Minor" if age < 18 else "Adult"
 print("\n--- CONDITIONAL LAMBDAS ---")
 print(f"Is 7 even? {is_even(7)}")
 print(f"Is 12 even? {is_even(12)}")
-print(f"Score 35: {grade(35)}")
+print(f"Score 36: {grade(36)}")
 print(f"Score 67: {grade(67)}")
 print(f"Age 15: {category(15)}")
 print(f"Age 23: {category(23)}")
