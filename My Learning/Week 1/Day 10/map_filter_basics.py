@@ -19,5 +19,25 @@ print(f"Capitalized: {capitalized}")
 print(f"Lengths:     {length}")
 print(f"With Rank:   {rank}")
 
+# 2. Temperature conversion
+celsius = [0, 3, 200, 100, 450]
+fahrenheit = list(map(lambda c: round((c * 9/5) + 32, 1), celsius))
+kelvin = list(map(lambda c: c + 273.15, celsius))
+
+print(f"\nCelsius: {celsius}")
+print(f"Fahrenheit: {fahrenheit}")
+print(f"Kelvin: {kelvin}")
+
+# 3. Map() with two lists
+prices = [100, 300, 80, 450, 6200]
+discounts = [10, 15, 20, 40, 25]
+
+final_prices = list(map(
+    lambda p, d: round(p - (p * d/100), 2), prices, discounts
+))
+
+print(f"\nPrices:       {prices}")
+print(f"Discounts %:  {discounts}")
+print(f"Final Prices: {final_prices}")
 
 print()
