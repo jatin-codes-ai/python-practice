@@ -40,4 +40,32 @@ print(f"\nPrices:       {prices}")
 print(f"Discounts %:  {discounts}")
 print(f"Final Prices: {final_prices}")
 
+# ─── FILTER() SECTION ────────────────────────────────────
+
+print("\n━━━ FILTER() — KEEP ONLY WHAT PASSES ━━━")
+
+# 1. Marks filter
+marks = [10, 45, 33, 67, 87, 57, 98, 77, 100, ]
+passed = list(filter(lambda m: m >= 40, marks))
+failed = list(filter(lambda m: m < 40, marks))
+distinction = list(filter(lambda m: m >= 75, marks))
+
+print(f"\nAll marks: {marks}")
+print(f"Passed: {passed}")
+print(f"Failed: {failed}")
+print(f"Distinction: {distinction}")
+
+# ─── COMBINED: map() + filter() ──────────────────────────
+
+print("\n━━━ COMBINED — MAP + FILTER PIPELINE ━━━")
+
+# 1. add 5 bonus marks then filter passed
+raw_marks = [23, 45, 37, 26, 46, 75, 64, 95, 83, 59, 87]
+pipeline = list(filter(
+    lambda m: m >= 40,
+    map(lambda m: m + 5, raw_marks)
+))
+print(f"\nRaw marks: {raw_marks}")
+print(f"Passed + bonus: {pipeline}")
+
 print()
