@@ -2,9 +2,9 @@
 print()
 
 print("=" * 40)
-print("         FILE HANDLING BASICS")
+print("         FILE HANDLING BASICS v1")
 print("=" * 40)
-
+# ---------------------- v1 ---------------------------
 print("Writing to file: ")
 with open("notes.txt", "w") as file:
     file.write("    Hello!\n    I am Jatin kumar.\n    I am learning python now.")
@@ -25,6 +25,9 @@ with open("notes.txt", "a") as file:
 with open("notes.txt", "r") as file:
     content = file.read()
 print(content)
+# ----------------------------------------------------
+
+
 
 print("=== END ===")
 print()
