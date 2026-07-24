@@ -6,6 +6,7 @@ print("=" * 40)
 print("         SAFE CALCULATOR — v1")
 print("=" * 40)
 
+# inputs rule
 def get_number(prompt):
     
     while True:
@@ -14,6 +15,7 @@ def get_number(prompt):
         except ValueError:
             print("Not a valid number. Try again.")
 
+# basic calculations
 def do_add(a, b):
     return a + b
 
@@ -26,11 +28,12 @@ def do_multiply(a, b):
 def do_divide(a, b):
     try:
         return a / b
+    # division error
     except ZeroDivisionError:
         print("Cannot divide by zero!")
         return None
 
-
+# menu loop
 while True:
     print("\nOperations:")
     print("1. Add (+)")
@@ -63,9 +66,11 @@ while True:
         num1 = get_number("Enter first number: ")
         num2 = get_number("Enter second number: ")
         result = do_divide(num1, num2)
+        # real division
         if result is not None:
             print(f"Result: {num1} / {num2} = {result}")
 
+    # only exit breaks the loop
     elif choice == "5":
         print("\nGoodbye! Thanks for calculating safely.")
         break
