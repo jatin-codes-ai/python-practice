@@ -57,8 +57,8 @@ while True:
         print(f"Result: {num1} - {num2} = {result}")
 
     elif choice == "3":
-        num1 = get_number("Enter first number: ")
-        num2 = get_number("Enter second number: ")
+        num1 = get_number("Enter 1st number: ")
+        num2 = get_number("Enter 2nd number: ")
         result = do_multiply(num1, num2)
         print(f"Result: {num1} * {num2} = {result}")
 
