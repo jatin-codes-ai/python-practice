@@ -15,6 +15,25 @@ def get_input(prompt):
         except ValueError:
             print("Not a valid number, Try again.")
 
+bigshot = {
+    "Title": "I'm a cultivation bigshot",
+    "Genre": "Cultivaton, Comedy",
+    "Tags": "OP MC, hidden strength",
+    "Mood": "Funny, chill",
+    "Chapters": "600+",
+    "Rating": "8.5",
+    "Description": "--MC pretends to be weak while being a secret expert."
+}
+solo = {
+    "Title": "Solo levelling", 
+    "Genre": "Action, fantasy",
+    "Tags": "OP MC, dark",
+    "Mood": "Intense, epic",
+    "Chapters": "200+", 
+    "Rating": "9.0",
+    "Description": "--Weakest hunter becomes strongest through mysterious system."
+}
+
 while True:
 
     print()
@@ -27,7 +46,13 @@ while True:
 
     choice = input("Your choice: ")
 
-    if choice = '1':
+    if choice == '1':
+        print("=" * 30)
+        print("     DATABASE")
+        print("=" * 30)
+        print(bigshot)
+
+
 
 
 
