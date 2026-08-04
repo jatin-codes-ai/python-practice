@@ -50,7 +50,6 @@ while True:
         print("=" * 30)
         print("     DATABASE")
         print("=" * 30)
-        print(bigshot)
 
 
 
