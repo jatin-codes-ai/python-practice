@@ -15,7 +15,8 @@ def get_input(prompt):
         except ValueError:
             print("Not a valid number, Try again.")
 
-bigshot = {
+database = [
+{
     "Title": "I'm a cultivation bigshot",
     "Genre": "Cultivaton, Comedy",
     "Tags": "OP MC, hidden strength",
@@ -23,8 +24,8 @@ bigshot = {
     "Chapters": "600+",
     "Rating": "8.5",
     "Description": "--MC pretends to be weak while being a secret expert."
-}
-solo = {
+},
+{
     "Title": "Solo levelling", 
     "Genre": "Action, fantasy",
     "Tags": "OP MC, dark",
@@ -33,6 +34,25 @@ solo = {
     "Rating": "9.0",
     "Description": "--Weakest hunter becomes strongest through mysterious system."
 }
+]
+
+def display_manhwa(manhwa, index):
+    # for manhwa in manhwa:
+        print(f"[{index}] {manhwa['Title']}")
+        print(f"    Genre: {(manhwa['Genre'])}")
+        print(f"    Tags: {(manhwa['Tags'])}")
+        print(f"    Mood: {(manhwa['Mood'])}")
+        print(f"    Chapters: {manhwa['Chapters']} | Rating: {manhwa['Rating']}")
+        print(f"    --> {manhwa['Description']}")
+        print("─" * 40)
+
+def view_db():
+    print("-" * 25)
+    print(f"    DATABASE({len(database)} titles)")
+    print("-" * 25)
+    for index, manhwa in enumerate(database, start=1):
+        display_manhwa(manhwa, index)
+
 
 while True:
 
@@ -47,9 +67,13 @@ while True:
     choice = input("Your choice: ")
 
     if choice == '1':
-        print("=" * 30)
-        print("     DATABASE")
-        print("=" * 30)
+        view_db()
+        print()
+    elif choice == '5':
+        print("Exiting Cultivation Compass. Happy reading!")
+        break
+    else:
+        print("Invalid choice. Please pick 1-5.")
 
 
 
