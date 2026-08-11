@@ -11,25 +11,25 @@ def get_input(prompt):
 
     while True:
         try:
-            return float(input(prompt))
+            return float(input(prompt) )
         except ValueError:
             print("Not a valid number, Try again.")
 
 database = [
 {
     "Title": "I'm a cultivation bigshot",
-    "Genre": "Cultivaton, Comedy",
-    "Tags": "OP MC, hidden strength",
-    "Mood": "Funny, chill",
+    "Genre": ["Cultivaton", "Comedy"],
+    "Tags": ["OP MC", "hidden strength"],
+    "Mood": ["Funny", "chill"],
     "Chapters": "600+",
     "Rating": "8.5",
     "Description": "--MC pretends to be weak while being a secret expert."
 },
 {
     "Title": "Solo levelling", 
-    "Genre": "Action, fantasy",
-    "Tags": "OP MC, dark",
-    "Mood": "Intense, epic",
+    "Genre": ["Action", "fantasy"],
+    "Tags": ["OP MC", "dark"],
+    "Mood": ["Intense", "epic"],
     "Chapters": "200+", 
     "Rating": "9.0",
     "Description": "--Weakest hunter becomes strongest through mysterious system."
@@ -37,14 +37,13 @@ database = [
 ]
 
 def display_manhwa(manhwa, index):
-    # for manhwa in manhwa:
-        print(f"[{index}] {manhwa['Title']}")
-        print(f"    Genre: {(manhwa['Genre'])}")
-        print(f"    Tags: {(manhwa['Tags'])}")
-        print(f"    Mood: {(manhwa['Mood'])}")
-        print(f"    Chapters: {manhwa['Chapters']} | Rating: {manhwa['Rating']}")
-        print(f"    --> {manhwa['Description']}")
-        print("─" * 40)
+    print(f"[{index}] {manhwa['Title']}")
+    print(f"    Genre: {', '.join(manhwa['Genre'])}")
+    print(f"    Tags: {', '.join(manhwa['Tags'])}")
+    print(f"    Mood: {', '.join(manhwa['Mood'])}")
+    print(f"    Chapters: {manhwa['Chapters']} | Rating: {manhwa['Rating']}")
+    print(f"    --> {manhwa['Description']}")
+    print("─" * 40)
 
 def view_db():
     print("-" * 25)
@@ -70,7 +69,7 @@ while True:
         view_db()
         print()
     elif choice == '5':
-        print("Exiting Cultivation Compass. Happy reading!")
+        print("\nExiting Cultimate. Happy reading!")
         break
     else:
         print("Invalid choice. Please pick 1-5.")
