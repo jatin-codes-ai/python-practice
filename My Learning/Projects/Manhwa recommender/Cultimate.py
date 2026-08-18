@@ -7,14 +7,35 @@ print("Your Manhwa Recommendation Engine")
 print("=" * 40)
 
 
-def get_input(prompt):
+def add_manhwa():
+    print("--- Add new manhwa ---")
+    title = input("Title:")
+    raw_genre = input("Genre(comma-separated): ")
+    genres = [g.strip() for g in raw_genre.split()]
+    raw_tags = input("Tags(comma-separated): ")
+    tags = [t.strip() for t in raw_tags.split()]
+    raw_moods = input("Moods(comma-separated): ")
+    moods = [m.strip() for m in raw_moods.split()]
+    chapters = input("Chapters: ")
+    rating = input("Rating: ")
+    description = input("Description: ")
 
-    while True:
-        try:
-            return float(input(prompt) )
-        except ValueError:
-            print("Not a valid number, Try again.")
+    new_manhwa = {
+        "Title": title,
+        "Genre": genres,
+        "Tags": tags,
+        "Moods": moods,
+        "Chapters": chapters,
+        "Rating": rating,
+        "Description": description
+    }
+    database.append(new_manhwa)
 
+    print(f'\n✓ Added "{title}" to database!')
+
+
+
+    
 database = [
 {
     "Title": "I'm a cultivation bigshot",
@@ -68,6 +89,8 @@ while True:
     if choice == '1':
         view_db()
         print()
+    elif choice == '2':
+        add_manhwa()
     elif choice == '5':
         print("\nExiting Cultimate. Happy reading!")
         break
